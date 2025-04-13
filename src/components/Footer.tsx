@@ -1,6 +1,7 @@
 
 import { Heart } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -40,6 +41,10 @@ const Footer = () => {
                 Contact
                 <span className="absolute left-0 bottom-0 h-px w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
+              <Link to="/attendance" className="text-sm relative group text-primary hover:text-primary-dark transition-colors">
+                Attendance System
+                <span className="absolute left-0 bottom-0 h-px w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
+              </Link>
             </nav>
           </div>
         </div>
