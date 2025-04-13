@@ -49,7 +49,7 @@ const Footer = () => {
             "flex items-center justify-center gap-1",
             "group"
           )}>
-            Built with <Heart className="h-4 w-4 text-red-500 fill-red-500 group-hover:animate-pulse" /> by John Doe © {currentYear}
+            Built with <Heart className="h-4 w-4 text-red-500 fill-red-500 group-hover:animate-pulse" /> by Zurkanaini Musah Yakubu © {currentYear}
           </p>
         </div>
       </div>

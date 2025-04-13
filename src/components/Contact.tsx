@@ -56,7 +56,7 @@ const Contact = () => {
           <h2 className="text-3xl font-bold text-center mb-4">Get In Touch</h2>
           <div className="h-1 w-16 bg-primary/30 rounded-full"></div>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto mt-6">
-            Feel free to reach out for collaborations, opportunities, or just a friendly chat about technology.
+            Feel free to reach out for collaborations, opportunities, or just a friendly chat about web development.
           </p>
         </div>
         
@@ -73,10 +73,10 @@ const Contact = () => {
                   <div>
                     <p className="text-muted-foreground text-sm">Email</p>
                     <a 
-                      href="mailto:johndoe@example.com" 
+                      href="mailto:musahyakubu59@gmail.com" 
                       className="font-medium hover:text-primary transition-colors relative group"
                     >
-                      johndoe@example.com
+                      musahyakubu59@gmail.com
                       <span className="absolute left-0 bottom-0 h-px w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
                     </a>
                   </div>
@@ -89,10 +89,10 @@ const Contact = () => {
                   <div>
                     <p className="text-muted-foreground text-sm">Phone</p>
                     <a 
-                      href="tel:+11234567890" 
+                      href="tel:+233597988282" 
                       className="font-medium hover:text-primary transition-colors relative group"
                     >
-                      +1 (123) 456-7890
+                      +233 597 988 282
                       <span className="absolute left-0 bottom-0 h-px w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
                     </a>
                   </div>
@@ -104,7 +104,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-muted-foreground text-sm">Location</p>
-                    <p className="font-medium">San Francisco, CA</p>
+                    <p className="font-medium">Accra, Ghana</p>
                   </div>
                 </div>
               </div>
