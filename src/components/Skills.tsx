@@ -1,5 +1,6 @@
 
 import { Code, Database, Laptop, Smartphone, Globe, Cpu } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const skillCategories = [
   {
@@ -36,18 +37,39 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-24 relative overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-20 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+      </div>
+      
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-4 text-center">Skills</h2>
-        <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-          A collection of technologies and tools I've worked with throughout my journey as a developer.
-        </p>
+        <div className="flex flex-col items-center mb-12">
+          <div className="inline-flex items-center gap-2 mb-3">
+            <div className="h-px w-6 bg-primary"></div>
+            <span className="text-primary font-medium">MY SKILLS</span>
+            <div className="h-px w-6 bg-primary"></div>
+          </div>
+          <h2 className="text-3xl font-bold text-center mb-4">What I Do</h2>
+          <div className="h-1 w-16 bg-primary/30 rounded-full"></div>
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto mt-6">
+            A collection of technologies and tools I've worked with throughout my journey as a developer.
+            My expertise spans across frontend, backend, and various development tools.
+          </p>
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
-            <div key={index} className="bg-card rounded-lg p-6 shadow-sm hover:shadow transition-shadow border">
+            <div 
+              key={index} 
+              className={cn(
+                "bg-card rounded-lg p-6 shadow-sm border",
+                "hover:shadow-md transition-all duration-300 hover:-translate-y-1",
+                "group"
+              )}
+            >
               <div className="flex items-center gap-3 mb-4">
-                <div className="text-primary">{category.icon}</div>
+                <div className="text-primary group-hover:scale-110 transition-transform duration-300">{category.icon}</div>
                 <h3 className="text-xl font-semibold">{category.title}</h3>
               </div>
               

@@ -1,9 +1,10 @@
 
-import { Mail, MapPin, Phone, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin, Github, Twitter, SendIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { useState } from "react";
 import { toast } from "@/components/ui/use-toast";
+import { cn } from "@/lib/utils";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ const Contact = () => {
     email: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -19,74 +21,107 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
     
-    // Show success toast
-    toast({
-      title: "Message sent!",
-      description: "Thanks for reaching out. I'll get back to you soon.",
-    });
-    
-    // Reset form
-    setFormData({ name: "", email: "", message: "" });
+    // Simulate API call
+    setTimeout(() => {
+      console.log("Form submitted:", formData);
+      
+      // Show success toast
+      toast({
+        title: "Message sent!",
+        description: "Thanks for reaching out. I'll get back to you soon.",
+      });
+      
+      // Reset form
+      setFormData({ name: "", email: "", message: "" });
+      setIsSubmitting(false);
+    }, 1000);
   };
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-24 relative overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-20 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+      </div>
+      
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-4 text-center">Get In Touch</h2>
-        <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-          Feel free to reach out for collaborations, opportunities, or just a friendly chat about technology.
-        </p>
+        <div className="flex flex-col items-center mb-12">
+          <div className="inline-flex items-center gap-2 mb-3">
+            <div className="h-px w-6 bg-primary"></div>
+            <span className="text-primary font-medium">CONTACT</span>
+            <div className="h-px w-6 bg-primary"></div>
+          </div>
+          <h2 className="text-3xl font-bold text-center mb-4">Get In Touch</h2>
+          <div className="h-1 w-16 bg-primary/30 rounded-full"></div>
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto mt-6">
+            Feel free to reach out for collaborations, opportunities, or just a friendly chat about technology.
+          </p>
+        </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div>
-            <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
-            
-            <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Mail className="text-primary" size={20} />
-                </div>
-                <div>
-                  <p className="text-muted-foreground text-sm">Email</p>
-                  <a href="mailto:johndoe@example.com" className="font-medium hover:text-primary transition-colors">
-                    johndoe@example.com
-                  </a>
-                </div>
-              </div>
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
               
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Phone className="text-primary" size={20} />
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Mail className="text-primary" size={22} />
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground text-sm">Email</p>
+                    <a 
+                      href="mailto:johndoe@example.com" 
+                      className="font-medium hover:text-primary transition-colors relative group"
+                    >
+                      johndoe@example.com
+                      <span className="absolute left-0 bottom-0 h-px w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-muted-foreground text-sm">Phone</p>
-                  <a href="tel:+11234567890" className="font-medium hover:text-primary transition-colors">
-                    +1 (123) 456-7890
-                  </a>
+                
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Phone className="text-primary" size={22} />
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground text-sm">Phone</p>
+                    <a 
+                      href="tel:+11234567890" 
+                      className="font-medium hover:text-primary transition-colors relative group"
+                    >
+                      +1 (123) 456-7890
+                      <span className="absolute left-0 bottom-0 h-px w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <MapPin className="text-primary" size={20} />
-                </div>
-                <div>
-                  <p className="text-muted-foreground text-sm">Location</p>
-                  <p className="font-medium">San Francisco, CA</p>
+                
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="text-primary" size={22} />
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground text-sm">Location</p>
+                    <p className="font-medium">San Francisco, CA</p>
+                  </div>
                 </div>
               </div>
             </div>
             
-            <div className="mt-8">
-              <h3 className="text-xl font-semibold mb-4">Connect</h3>
+            <div>
+              <h3 className="text-xl font-semibold mb-6">Connect</h3>
               <div className="flex gap-4">
                 <a 
                   href="https://github.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-card border flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                  className={cn(
+                    "w-12 h-12 rounded-full border flex items-center justify-center",
+                    "hover:bg-primary hover:text-primary-foreground hover:border-primary",
+                    "transition-colors duration-300"
+                  )}
                 >
                   <Github size={20} />
                 </a>
@@ -94,7 +129,11 @@ const Contact = () => {
                   href="https://linkedin.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-card border flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                  className={cn(
+                    "w-12 h-12 rounded-full border flex items-center justify-center",
+                    "hover:bg-primary hover:text-primary-foreground hover:border-primary",
+                    "transition-colors duration-300"
+                  )}
                 >
                   <Linkedin size={20} />
                 </a>
@@ -102,7 +141,11 @@ const Contact = () => {
                   href="https://twitter.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-card border flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                  className={cn(
+                    "w-12 h-12 rounded-full border flex items-center justify-center",
+                    "hover:bg-primary hover:text-primary-foreground hover:border-primary",
+                    "transition-colors duration-300"
+                  )}
                 >
                   <Twitter size={20} />
                 </a>
@@ -110,10 +153,10 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="bg-card rounded-lg p-6 shadow-sm">
+          <div className="bg-card rounded-lg p-8 shadow-sm border">
             <h3 className="text-xl font-semibold mb-6">Send Message</h3>
             
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
                 <Label htmlFor="name">Name</Label>
                 <input
@@ -123,7 +166,11 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                  className={cn(
+                    "w-full rounded-md border border-input bg-background px-4 py-3 text-sm",
+                    "shadow-sm transition-colors focus:border-primary",
+                    "placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary"
+                  )}
                   placeholder="Your name"
                 />
               </div>
@@ -137,7 +184,11 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                  className={cn(
+                    "w-full rounded-md border border-input bg-background px-4 py-3 text-sm",
+                    "shadow-sm transition-colors focus:border-primary",
+                    "placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary"
+                  )}
                   placeholder="Your email"
                 />
               </div>
@@ -151,12 +202,23 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                  className={cn(
+                    "w-full rounded-md border border-input bg-background px-4 py-3 text-sm",
+                    "shadow-sm transition-colors focus:border-primary",
+                    "placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary resize-none"
+                  )}
                   placeholder="Your message"
                 />
               </div>
               
-              <Button type="submit" className="w-full">Send Message</Button>
+              <Button 
+                type="submit" 
+                className="w-full gap-2"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
+                <SendIcon size={16} className={isSubmitting ? "animate-pulse" : ""} />
+              </Button>
             </form>
           </div>
         </div>
