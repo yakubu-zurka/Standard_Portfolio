@@ -38,7 +38,7 @@ const About = () => {
               responsive, performant, and accessible Web Applications that provide exceptional user experiences.
             </p>
             <p className="text-lg mb-6 text-gray-400 leading-relaxed">
-              My journey in software development began when I built my first website after few months just introduced to tech.
+              My journey in software development began when I built my first website after few months been introduced to tech.
               Since then, I've worked with various technologies and frameworks to deliver high-quality
               solutions for clients.
             </p>

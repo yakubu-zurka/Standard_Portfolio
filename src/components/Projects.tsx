@@ -43,6 +43,27 @@ const projects = [
     imageUrl:  "https://i.pinimg.com/736x/50/33/41/50334152af4fad681f9c44e09e3c4db4.jpg",
     
   },
+  {
+    title: "Student-Accommodation",
+    description: "A platform for students to find and book accommodations, with user reviews and ratings.",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "JQuery"],
+    demoUrl: "#",
+    repoUrl: "https://github.com/Jojofelani/StudentNest-Frontend",
+    featured: true,
+    imageUrl:  "https://i.pinimg.com/736x/15/81/49/158149aca0cf2e2eaa75c5cf3b623c55.jpg",
+    
+  },
+
+  {
+    title: "CRUD-Application",
+    description: "A simple CRUD application for managing user data with authentication and validation.",
+    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    demoUrl: "#",
+    repoUrl: "https://github.com/yakubu-zurka/Backend",
+    featured: true,
+    imageUrl:  "https://i.pinimg.com/736x/20/5b/74/205b7457de5bb32d4c38f2c3ff78438d.jpg",
+    
+  },
   
 ];
 
