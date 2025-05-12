@@ -56,7 +56,7 @@ const Hero = () => {
                 <div className="relative z-10 text-center p-6">
                   <div className="w-36 h-36 md:w-48 md:h-48 rounded-lg bg-muted mx-auto flex items-center justify-center">
                     <img 
-                      src="/src/assets/myprofile.jpeg" 
+                      src="/myprofile.jpeg" 
                       alt="mypic" 
                       className="rounded-full w-full h-full object-cover" 
                     />
