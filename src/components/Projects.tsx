@@ -1,38 +1,21 @@
-
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Github, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const projects = [
+
+
   {
-    title: " Tourism_Project",
-    description: "A full-stack e-commerce solution with payment processing, user authentication, and inventory management.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    demoUrl: "#",
-    repoUrl: "https://github.com/yakubu-zurka/TOURISM_PROJECT",
-    featured: true,
-    imageUrl: "https://i.pinimg.com/736x/e2/a7/8c/e2a78c1f0243e7f5c1c985b87a3066b1.jpg"
-  },
-  {
-    title: " Real-Assets",
-    description: "A collaborative task manager with real-time updates, file sharing, and team communication features.",
-    technologies: ["React", "Firebase", "Tailwind CSS", "Redux"],
-    demoUrl: "#",
-    repoUrl: "#",
-    featured: true,
-    imageUrl: "https://i.pinimg.com/736x/d8/8e/6a/d88e6a3d79acc6c62760ce765ed50f6a.jpg"
-  },
-   
-  {
-    title: "GMSA_Project",
-    description: "A platform for tracking and analyzing social media performance across multiple platforms.",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Recharts"],
-    demoUrl: "#",
-    repoUrl: "#",
+    title: "Standard_Portfolio ",
+    description: "My personal developer portfolio website, showcasing my skills, projects, and contact information in a modern, responsive design.",
+    technologies: ["React.js", "TypeScript", "shadcn-ui", "RTailwind CSViteS"],
+    demoUrl: "yakubtech.netlify.app",
+    repoUrl: "https://github.com/yakubu-zurka/Standard_Portfolio",
     featured: true,
     imageUrl: "https://i.pinimg.com/736x/b9/fa/ee/b9faee9f19715d3f2562f8f264bbbe34.jpg"
   },
+
   {
     title: "TeleCareSystem",
     description: "A telemedicine platform for remote consultations, appointment scheduling, and patient management.",
@@ -43,8 +26,9 @@ const projects = [
     imageUrl:  "https://i.pinimg.com/736x/50/33/41/50334152af4fad681f9c44e09e3c4db4.jpg",
     
   },
+
   {
-    title: "Student-Accommodation",
+    title: "Student-Nest",
     description: "A platform for students to find and book accommodations, with user reviews and ratings.",
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "JQuery"],
     demoUrl: "#",
@@ -54,7 +38,7 @@ const projects = [
     
   },
 
-  {
+   {
     title: "CRUD-Application",
     description: "A simple CRUD application for managing user data with authentication and validation.",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
@@ -64,6 +48,26 @@ const projects = [
     imageUrl:  "https://i.pinimg.com/736x/20/5b/74/205b7457de5bb32d4c38f2c3ff78438d.jpg",
     
   },
+  
+  {
+    title: " Tourism_Project",
+    description: "A modern tourism platform enabling users to explore destinations, book tours, and make secure payments online.",
+    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+    demoUrl: "#",
+    repoUrl: "https://github.com/yakubu-zurka/TOURISM_PROJECT",
+    featured: true,
+    imageUrl: "https://i.pinimg.com/736x/e2/a7/8c/e2a78c1f0243e7f5c1c985b87a3066b1.jpg"
+  },
+  {
+    title: " Real-Assets",
+    description: "A real estate management app for tracking properties, managing listings, and facilitating seamless communication between buyers and sellers.",
+    technologies: ["React", "Firebase", "Tailwind CSS", "Redux"],
+    demoUrl: "#",
+    repoUrl: "#",
+    featured: true,
+    imageUrl: "https://i.pinimg.com/736x/d8/8e/6a/d88e6a3d79acc6c62760ce765ed50f6a.jpg"
+  },
+   
   
 ];
 

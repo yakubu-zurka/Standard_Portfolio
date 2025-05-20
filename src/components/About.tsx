@@ -1,4 +1,4 @@
- import { User, MapPin, Calendar, Briefcase, Sparkles } from "lucide-react";
+import { User, MapPin, Calendar, Briefcase, Sparkles } from "lucide-react";
 
 const About = () => {
   return (
@@ -20,8 +20,6 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-extrabold text-center text-white mb-4">
              Know Me More
           </h2>
-          
-          
           <div className="h-1 w-16 bg-primary/30 rounded-full"></div>
         </div>
 
@@ -29,21 +27,21 @@ const About = () => {
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left Content */}
           <div className="lg:w-7/12">
-          <h3 className="text-3xl font-semibold mb-4 text-white">
-            I'm <span className="text-white">Zurkanaini Musah Yakubu</span>, a Software Developer
-          </h3>
+            <h3 className="text-3xl font-semibold mb-4 text-white">
+              I'm <span className="text-white">Zurkanaini Musah Yakubu</span>, a Software Developer
+            </h3>
             <p className="text-lg mb-6 text-gray-400 leading-relaxed">
               I'm a passionate software developer with expertise in building modern web applications.
-              With some years of experience in the industry, I specialize in creating
-              responsive, performant, and accessible Web Applications that provide exceptional user experiences.
+              With several years of experience in the industry, I specialize in creating
+              responsive, performant, and accessible web applications that provide exceptional user experiences.
             </p>
             <p className="text-lg mb-6 text-gray-400 leading-relaxed">
-              My journey in software development began when I built my first website after few months been introduced to tech.
+              My journey in software development began when I built my first website just a few months after being introduced to tech.
               Since then, I've worked with various technologies and frameworks to deliver high-quality
               solutions for clients.
             </p>
             <p className="text-lg text-gray-400 leading-relaxed">
-              When I'm not coding, you can find me reading tech blogs, Reading My Islamic Books
+              When I'm not coding, you can find me reading tech blogs, studying Islamic books,
               or contributing to open-source projects. I believe in continuous learning and staying
               updated with the latest industry trends.
             </p>
@@ -88,7 +86,6 @@ const About = () => {
                   <p className="text-gray-400 text-sm">Experience</p>
                   <p className="font-medium text-white">4+ Years</p>
                 </div>
-                
               </div>
 
               {/* Detail Item */}
@@ -101,13 +98,13 @@ const About = () => {
                   <p className="font-medium text-white">For Freelance || Open To Work</p>
                 </div>
               </div>
-               {/* Detail Item */}
-               <div className="flex items-center gap-4">
+              {/* Detail Item */}
+              <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <Briefcase className="text-primary" size={22} />
                 </div>
                 <div>
-                  <p className="text-gray-400 text-sm">Eduaction</p>
+                  <p className="text-gray-400 text-sm">Education</p>
                   <p className="font-medium text-white">Degree in Computer Science</p>
                 </div>
               </div>

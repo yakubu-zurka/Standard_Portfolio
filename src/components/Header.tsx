@@ -39,16 +39,16 @@ const Header = () => {
 
         {/* Navbar Links */}
         <nav className="hidden md:flex items-center gap-6">
-          <a href="#home" className="text-sm font-medium hover:text-primary transition-colors">
+          <a href="#home" className="text-lg font-medium hover:text-primary transition-colors">
             Home
           </a>
-          <a href="#projects" className="text-sm font-medium hover:text-primary transition-colors">
+          <a href="#projects" className="text-lg font-medium hover:text-primary transition-colors">
             Projects
           </a>
-          <a href="#skills" className="text-sm font-medium hover:text-primary transition-colors">
+          <a href="#skills" className="text-lg font-medium hover:text-primary transition-colors">
             Skills
           </a>
-          <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
+          <a href="#contact" className="text-lg font-medium hover:text-primary transition-colors">
             Contact
           </a>
         </nav>
