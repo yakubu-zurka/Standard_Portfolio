@@ -9,11 +9,11 @@ const projects = [
   {
     title: "Standard_Portfolio ",
     description: "My personal developer portfolio website, showcasing my skills, projects, and contact information in a modern, responsive design.",
-    technologies: ["React.js", "TypeScript", "shadcn-ui", "RTailwind CSViteS"],
-    demoUrl: "yakubtech.netlify.app",
+    technologies: ["React.js", "TypeScript", "shadcn-ui", "Tailwind CSS", "Vite"],
+    demoUrl: "https://yakubtech.netlify.app/",
     repoUrl: "https://github.com/yakubu-zurka/Standard_Portfolio",
     featured: true,
-    imageUrl: "https://i.pinimg.com/736x/b9/fa/ee/b9faee9f19715d3f2562f8f264bbbe34.jpg"
+    imageUrl: "https://i.pinimg.com/736x/b1/33/d5/b133d58e9c32a89fec4b0e099613d05d.jpg"
   },
 
   {
