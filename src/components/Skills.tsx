@@ -8,9 +8,15 @@ const skillCategories = [
     skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML/CSS", "JavaScript","Bootstrap", "JQuery"]
   },
   {
-    title: "Backend Development",
-    icon: <Database className="h-6 w-6" />,
-    skills: ["Node.js", "Express", "MongoDB"]
+  
+  title: "Backend Development",
+  icon: <Database className="h-6 w-6" />,
+  skills: [
+    "Node.js", "Express", "MongoDB", "PostgreSQL", "MySQL",
+    "RESTful APIs",  "JWT Authentication" , "Mongoose",  
+     "CI/CD", "Testing (Jest, Mocha)"
+  ]
+
   },
   
    
