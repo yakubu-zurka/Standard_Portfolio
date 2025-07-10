@@ -32,7 +32,7 @@ const About = () => {
             </h3>
             <p className="text-lg mb-6 text-gray-400 leading-relaxed">
               I'm a passionate software developer with expertise in building modern web applications.
-              With several years of experience in the industry, I specialize in creating
+              With 3+ of experience in the industry, I specialize in creating
               responsive, performant, and accessible web applications that provide exceptional user experiences.
             </p>
             <p className="text-lg mb-6 text-gray-400 leading-relaxed">

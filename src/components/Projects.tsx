@@ -4,6 +4,16 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const projects = [
+   {
+    title: "Organization Management System",
+    description: "A comprehensive platform for managing organizational task, financial and Transactional records.",
+    technologies: ["React.js", "Node Js","MongoDB","Express.js","TypeScript", "shadcn-ui", "Tailwind CSS", "Vite"],
+    demoUrl: "https://lhiafienyacity.org/homepage",
+    repoUrl: "https://github.com/yakubu-zurka/Standard_Portfolio",
+    featured: true,
+    imageUrl: "https://i.pinimg.com/1200x/6c/a1/3f/6ca13f72f7c0e7870cb1fe750a28f30a.jpg"
+  },
+
 
 
   {
@@ -13,13 +23,13 @@ const projects = [
     demoUrl: "https://yakubtech.netlify.app/",
     repoUrl: "https://github.com/yakubu-zurka/Standard_Portfolio",
     featured: true,
-    imageUrl: "https://i.pinimg.com/736x/29/a0/7e/29a07e36275256397a4ceed45727d8e4.jpg"
+    imageUrl: "https://i.pinimg.com/1200x/fe/f7/b3/fef7b3cbaeb59afc974ab04dd20741e6.jpg"
   },
 
   {
     title: "TeleCareSystem",
     description: "A telemedicine platform for remote consultations, appointment scheduling, and patient management.",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    technologies: ["React", "Node.js", "Express", "MongoDB","Tailwind CSS","typescript"],
     demoUrl: "#",
     repoUrl: "https://github.com/yakubu-zurka/TeleCareSystem",
     featured: true,
@@ -41,7 +51,7 @@ const projects = [
    {
     title: "CRUD-Application",
     description: "A simple CRUD application for managing user data with authentication and validation.",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    technologies: ["React", "Node.js", "Express", "MongoDB","tailwind CSS","typescript"],
     demoUrl: "#",
     repoUrl: "https://github.com/yakubu-zurka/Backend",
     featured: true,
@@ -52,7 +62,7 @@ const projects = [
   {
     title: " Tourism_Project",
     description: "A modern tourism platform enabling users to explore destinations, book tours, and make secure payments online.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+    technologies: ["HTML", "CSS", "Javascript","Bootstrap", "Stripe"],
     demoUrl: "#",
     repoUrl: "https://github.com/yakubu-zurka/TOURISM_PROJECT",
     featured: true,

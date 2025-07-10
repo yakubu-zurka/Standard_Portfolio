@@ -126,7 +126,7 @@ const Contact = () => {
               <h3 className="text-xl font-semibold mb-6">Connect</h3>
               <div className="flex gap-4">
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/yakubu-zurka" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className={cn(
@@ -138,7 +138,7 @@ const Contact = () => {
                   <Github size={20} />
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/zulqarnaini-yakubu-a62b02284/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className={cn(
