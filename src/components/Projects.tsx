@@ -23,7 +23,7 @@ const projects = [
     demoUrl: "https://yakubtech.netlify.app/",
     repoUrl: "https://github.com/yakubu-zurka/Standard_Portfolio",
     featured: true,
-    imageUrl: "https://i.pinimg.com/736x/b9/fa/ee/b9faee9f19715d3f2562f8f264bbbe34.jpg"
+    imageUrl: "https://i.pinimg.com/1200x/fe/f7/b3/fef7b3cbaeb59afc974ab04dd20741e6.jpg"
   },
 
   {
